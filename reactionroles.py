@@ -1,4 +1,4 @@
-#run on atom: f5
+
 from operator import xor
 import attr
 import hikari as h
@@ -22,6 +22,7 @@ class SuccessfulAddRoleEvent(Event):
     content: str
 
 @bot.command
+#custom emojis will not work
 @lb.option('emoji','Choose the emoji (Only default emojis allowed)')
 @lb.option('role','Choose the role', type=h.Role)
 @lb.option('messageid','Copy and paste the message ID')
@@ -60,6 +61,7 @@ async def AddRole(ctx: h.GuildReactionAddEvent):
     bot.dispatch(event)
 
 @bot.listen()
+#time made, unable to unionize two different event classes in listen function
 async def library_search(event:SuccessfulAddRoleEvent | h.GuildReactionAddEvent):
     lib = event.content
 
