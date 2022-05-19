@@ -1,5 +1,5 @@
 # hikari-lightblubrolereactionexample
-A role reaction used with Hikari-Lightbulb library. Does not work. Only for reference or starting points.
+A role reaction used with Hikari-Lightbulb library for Discord. Does not work. Only for reference or starting points.
 Last worked on: 5/19/2022
 
 Issues that appeared:
